@@ -10,10 +10,8 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // findViewById adalah metode bawaan framework android.view.View
         val btnNextPage = findViewById<Button>(R.id.btn_next_page)
 
-        // Intent adalah kelas framework inti (android.content.Intent)
         btnNextPage.setOnClickListener {
             val intent = Intent(this, ArchitectureActivity::class.java)
             startActivity(intent)
