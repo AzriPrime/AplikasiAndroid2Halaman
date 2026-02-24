@@ -48,7 +48,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="[Placeholder: Penjelasan Layer Arsitektur Android: Linux Kernel, HAL, Native Libraries, Java API Framework, System Apps]"
+                    android:text="Belum diisi"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:textSize="14sp" android:textColor="@color/black"/>
@@ -76,7 +76,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
-                    android:text="Model: [Menunggu Data...]\nOS Version: [Menunggu Data...]\nManufacturer: [Menunggu Data...]"
+                    android:text="damn"
                     android:textSize="14sp" android:textColor="@color/black"/>
 
         </LinearLayout>
