@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">Aplikasi 2 Halaman</string>
+
+    <string name="sejarah_android_konten">
+        Android adalah sistem operasi berbasis Linux Kernel untuk perangkat mobile.\n
+        Didirikan tahun 2003 oleh:\n
+        - Andy Rubin\n
+        - Rich Miner\n
+        - Nick Sears\n
+        - Chris White\n
+        Diakuisisi oleh Google pada 2005.\n
+        Smartphone Android pertama: HTC Dream (2008).\n
+        Bersifat open source (AOSP) →  bebas dikembangkan.\n
+        Distribusi aplikasi melalui Google Play Store.\n
+        Versi terbaru saat ini: Android 15.\n
+    </string>
+
+    <string name="arsitektur_android_konten">
+        Android memiliki 6 lapisan utama:\n
+        1. Linux Kernel\n
+           Mengatur hardware, keamanan, memori, dan driver.\n
+        2. Hardware Abstraction Layer (HAL)\n
+           Penghubung antara hardware dan sistem.\n
+        3. Native Libraries\n
+           Library C/C++ (SQLite, OpenGL, dll).\n
+        4. Android Runtime (ART)\n
+           Menjalankan aplikasi Android.\n
+        5. Application Framework\n
+           Menyediakan API (Activity Manager, Notification, dll).\n
+        6. Applications\n
+           Aplikasi bawaan dan aplikasi pihak ketiga.\n
+    </string>
 </resources>
