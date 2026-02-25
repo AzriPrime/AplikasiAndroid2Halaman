@@ -21,9 +21,11 @@ class ArchitectureActivity : Activity() {
             finish()
         }
 
+        val androidVersion = Build.VERSION.RELEASE
         val model = Build.MODEL
         val manufaktur = Build.MANUFACTURER
         val brand = Build.BRAND
+        val kernelVersion = System.getProperty("os.version") ?: "Unknown"
         val user = Build.USER
         val type = Build.TYPE
         val host = Build.HOST
@@ -31,18 +33,24 @@ class ArchitectureActivity : Activity() {
         val batteryManager = getSystemService(Context.BATTERY_SERVICE) as BatteryManager
         val getBatteryPercentage = batteryManager.getIntProperty(BatteryManager.BATTERY_PROPERTY_CAPACITY)
 
-        val textInfo =  "Model      \n" +
+        val textInfo =  "Android    \n" +
+                        "Model      \n" +
                         "Manufaktur \n" +
                         "Brand      \n" +
                         "Baterai    \n" +
+                        "Kernel     \n\n" +
+                        "Network Status\n" +
                         "User       \n" +
-                        "Type       \n"+
+                        "Type       \n" +
                         "Host       "
 
-        val textDetail =":  $model\n" +
+        val textDetail =":  $androidVersion \n" +
+                        ":  $model\n" +
                         ":  $manufaktur\n" +
                         ":  $brand\n" +
                         ":  $getBatteryPercentage%\n" +
+                        ":  $kernelVersion\n" +
+                        ":  WIFI\n" +
                         ":  $user\n" +
                         ":  $type\n" +
                         ":  $host"
