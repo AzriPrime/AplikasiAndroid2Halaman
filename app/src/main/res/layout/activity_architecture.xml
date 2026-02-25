@@ -29,7 +29,7 @@
             android:layout_height="match_parent"
             android:layout_below="@id/tv_title_page2"
             android:layout_above="@id/btn_back"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="16dp" android:id="@+id/scroll1">
 
         <LinearLayout
                 android:layout_width="match_parent"
@@ -44,22 +44,71 @@
                     android:textStyle="bold"
                     android:textSize="18sp" android:textColor="@color/black"/>
 
-            <TextView
-                    android:id="@+id/tv_arch_content"
+            <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/arsitektur_android_konten"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:textSize="16sp" android:textColor="@color/black"/>
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="#FFCC80"
+                        android:text="System Apps"
+                        android:gravity="center"
+                        android:textColor="#212121"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="#BBDEFB"
+                        android:text="Java API Framework"
+                        android:gravity="center"
+                        android:textColor="#212121"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="#64B5F6"
+                        android:text="Native Libraries &amp; Android Runtime"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="#A5D6A7"
+                        android:text="Hardware Abstraction Layer (HAL)"
+                        android:gravity="center"
+                        android:textColor="#212121"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="#757575"
+                        android:text="Linux Kernel"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+            </LinearLayout>
 
             <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="#CCCCCC"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp" />
+                    android:layout_below="@id/scroll1"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"/>
 
             <TextView
                     android:layout_width="wrap_content"
@@ -72,8 +121,8 @@
 
             <LinearLayout
                     android:orientation="horizontal"
-                    android:layout_width="349dp"
-                    android:layout_height="166dp">
+                    android:layout_width="match_parent"
+                    android:layout_height="206dp">
                 <TextView
                         android:id="@+id/text_device_info"
                         android:layout_width="40dp"
@@ -81,17 +130,17 @@
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
                         android:text="damn"
-                        android:textSize="16sp" android:textColor="@color/black" android:layout_weight="1"
+                        android:textSize="14sp" android:textColor="@color/black" android:layout_weight="1"
                         android:layout_height="match_parent"/>
                 <TextView
                         android:id="@+id/text_device_detail"
-                        android:layout_width="197dp"
+                        android:layout_width="223dp"
                         android:layout_height="match_parent"
                         android:layout_marginTop="8dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginEnd="20dp"
                         android:text="damn"
-                        android:textSize="16sp" android:textColor="@color/black" android:textAlignment="textStart"/>
+                        android:textSize="14sp" android:textColor="@color/black" android:textAlignment="textStart"/>
             </LinearLayout>
 
         </LinearLayout>
