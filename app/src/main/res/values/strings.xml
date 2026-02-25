@@ -8,11 +8,19 @@
         - Rich Miner\n
         - Nick Sears\n
         - Chris White\n
-        Diakuisisi oleh Google pada 2005.\n
-        Smartphone Android pertama: HTC Dream (2008).\n
-        Bersifat open source (AOSP) →  bebas dikembangkan.\n
-        Distribusi aplikasi melalui Google Play Store.\n
-        Versi terbaru saat ini: Android 15.\n
+        Pada tahun 2005, android diakuisisi oleh\n
+        Google.\n
+        Di tahun 2008, Android mulai didistribusikan\n
+        secara resmi melalui Android Market yang saat\n
+        ini dikenal dengan Google Play Store. Hal ini\n
+        bersamaan dengan peluncuran smartphone\n
+        android pertama bernama HTC Dream.\n
+        Hingga saat ini versi resmi terbaru adalah\n
+        Android 15.\n
+    </string>
+
+    <string name="sumber">
+        Sumber: https://www.qwords.com/blog/sejarah-android/
     </string>
 
     <string name="arsitektur_android_konten">
