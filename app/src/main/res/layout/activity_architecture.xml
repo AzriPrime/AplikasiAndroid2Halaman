@@ -9,25 +9,26 @@
             android:id="@+id/btn_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
             android:text="Back" />
 
     <TextView
             android:id="@+id/tv_title_page2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_back"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:text="ARSITEKTUR INFO DEVICE"
-            android:textSize="22sp"
+            android:text="ARSITEKTUR &amp; INFO DEVICE"
+            android:textSize="24sp"
             android:textStyle="bold" android:textColor="@color/black"/>
 
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/tv_title_page2"
+            android:layout_above="@id/btn_back"
             android:layout_marginTop="16dp">
 
         <LinearLayout
@@ -51,7 +52,7 @@
                     android:text="@string/arsitektur_android_konten"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
-                    android:textSize="14sp" android:textColor="@color/black"/>
+                    android:textSize="16sp" android:textColor="@color/black"/>
 
             <View
                     android:layout_width="match_parent"
@@ -67,17 +68,31 @@
                     android:layout_gravity="center_horizontal"
                     android:textStyle="bold"
                     android:textSize="18sp" android:textColor="@color/black" android:textAlignment="center"
-            />
+                    android:layout_marginBottom="12dp"/>
 
-            <TextView
-                    android:id="@+id/text_device_info"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:text="damn"
-                    android:textSize="14sp" android:textColor="@color/black"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="349dp"
+                    android:layout_height="166dp">
+                <TextView
+                        android:id="@+id/text_device_info"
+                        android:layout_width="40dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="damn"
+                        android:textSize="16sp" android:textColor="@color/black" android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+                <TextView
+                        android:id="@+id/text_device_detail"
+                        android:layout_width="197dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="damn"
+                        android:textSize="16sp" android:textColor="@color/black" android:textAlignment="textStart"/>
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

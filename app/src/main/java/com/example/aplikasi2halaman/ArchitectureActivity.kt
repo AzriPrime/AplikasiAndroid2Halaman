@@ -15,6 +15,7 @@ class ArchitectureActivity : Activity() {
 
         val btnBack = findViewById<Button>(R.id.btn_back)
         val textDeviceInfo = findViewById<TextView>(R.id.text_device_info)
+        val textDeviceDetail = findViewById<TextView>(R.id.text_device_detail)
 
         btnBack.setOnClickListener {
             finish()
@@ -30,14 +31,23 @@ class ArchitectureActivity : Activity() {
         val batteryManager = getSystemService(Context.BATTERY_SERVICE) as BatteryManager
         val getBatteryPercentage = batteryManager.getIntProperty(BatteryManager.BATTERY_PROPERTY_CAPACITY)
 
-        val textInfo =  "Model          : $model\n" +
-                        "Manufaktur     : $manufaktur\n" +
-                        "Brand          : $brand\n" +
-                        "Baterai        : $getBatteryPercentage%\n" +
-                        "User           : $user \n" +
-                        "Type           : $type\n" +
-                        "Host           : $host \n"
+        val textInfo =  "Model      \n" +
+                        "Manufaktur \n" +
+                        "Brand      \n" +
+                        "Baterai    \n" +
+                        "User       \n" +
+                        "Type       \n"+
+                        "Host       "
+
+        val textDetail =":  $model\n" +
+                        ":  $manufaktur\n" +
+                        ":  $brand\n" +
+                        ":  $getBatteryPercentage%\n" +
+                        ":  $user\n" +
+                        ":  $type\n" +
+                        ":  $host"
 
         textDeviceInfo.text = textInfo
+        textDeviceDetail.text = textDetail
     }
 }
